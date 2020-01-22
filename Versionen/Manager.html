@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Ansicht Schiedsrichter</title>
+
+<h1>Schiedsrichter</h1>
+
+<link rel="stylesheet" type="text/css" href="css/styleschiri.css">
+
+<!-- JAVA TIMER -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <div class="timer">
+            <span class="minute">00</span>:<span class="second">10</span>
+        </div>
+        <div class="control">
+            <button onClick="timer.start(1000)">Start</button> 
+            <button onClick="timer.stop()">Stop</button> 
+            <button onClick="timer.reset(60)">Reset</button> 
+            
+            <button onClick="timer.mode(0)">Count down</button>
+        </div>
+
+  <script  src="js/timer.js"></script>
+
+<!-- JAVA TIMER ENDE -->
+
+</head>
+                
+
+<body>
+        <label>Runde auswählen
+                <select name="top5" size="5">
+                  <option>Runde 1</option>
+                  <option>Runde 2</option>
+                  <option>Runde 3</option>
+                  <option>Runde 4</option>
+                </select>
+              </label>
+        
+<table>
+    <tr>
+        <th colspan="5">Runde 1</th>
+    </tr>
+    <tr>
+        <td>Team X</td>
+        <td>Punkte X</td>
+        <td>:</td>
+        <td>Punkte Y</td>
+        <td>Team Y</td>
+    </tr>
+
+</table>
+</body>
+</html>
+
+

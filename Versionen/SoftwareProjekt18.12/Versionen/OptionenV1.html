@@ -1,0 +1,63 @@
+<html>
+
+<body>
+
+<table style="width:30%">
+<tr>
+    <td>Turniername:</td>
+    <td><input type="text" id="turniername"></td>
+</tr>
+<tr>
+    <td>Beginn der Spiele:</td>
+    <td><input type="time"></td>
+</tr>
+<tr>
+    <td>Gruppenphase?:</td>
+    <td><input type="checkbox" id="phase" onclick="test()"></td>
+</tr>
+
+<tr style="visibility:hidden" id="Groesse">
+    <td>Gruppengröße: </td>
+    <td><input type="number" id="gruppengroesse" min="0" max="15" name="gruppen" value="0"></td>
+</tr>
+<tr style="visibility:hidden" id="weiter">
+    <td>Teams pro Gruppe weiter:</td>
+    <td><input type="number" id="weiterkommend" min="1" max="15" name="weiter"></td>
+</tr>
+<script>
+        function test() {
+ // Get the checkbox
+ var checkBox = document.getElementById("phase");
+ // Get the output text
+ var text = document.getElementById("Groesse");
+ var text2= document.getElementById("weiter");
+
+ // If the checkbox is checked, display the output text
+ if (checkBox.checked == true){
+   text.style.visibility = "visible";
+   text2.style.visibility = "visible";
+ } else {
+   text.style.visibility = "hidden";
+   text2.style.visibility = "hidden";
+ }
+}
+</script>
+<tr>
+    <td>Spielfelder:</td>
+    <td><input type="number" id="Spielfelder" min="0" max="15" name="felder"></td>
+</tr>
+<tr>
+    <td>Spielezeit:</td>
+    <td><input type="number" id="Spielezeit" min="0" max="60" name="zeit"></td>
+</tr>
+<tr>
+    <td>Zeit zwischen den Spielen:</td>
+    <td><input type="number" id="pausenzeit" min="0" max="15" name="timeout"></td>
+</tr>
+
+</table>
+<input type="submit">
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<html>
+<body>
+        Tisch 1: <input type="checkbox" id="myCheck"  onclick="myFunction()">
+
+    <iframe name="tische" id="tisch" src="Tisch.html" style="width:100%;height:10%;display:none"></iframe>
+    <script>
+         function myFunction() {
+  // Get the checkbox
+  var checkBox = document.getElementById("myCheck");
+  // Get the output text
+  var text = document.getElementById("tisch");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+            </script>
+
+</body>
+</html>
