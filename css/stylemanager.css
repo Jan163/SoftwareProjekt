@@ -1,0 +1,81 @@
+
+div.timer {
+    border:1px #666666 solid;
+    width:190px;
+    height:50px;
+    line-height:50px;
+    font-size:36px;
+    font-family:"Courier New", Courier, monospace;
+    text-align:center;
+    margin:auto;
+}
+.card {
+    padding: 40px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    width: 40%;
+    /*background-color: #F7F7F7;*/
+    background-color: #fffffe;
+    margin: 0 auto 10px;
+    border-radius: 2px;
+    border: 2px solid black;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    }
+.tablewatch{
+    border: none;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+.tablelinks{
+    border: none;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    margin-top:30px
+}
+.tablepunkte{
+    border: 4px solid #000000;
+    background-color: lightgrey;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 30px;
+    float:left; 
+    width: 100%;
+  }
+.tablegruppe{
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float:left;
+    width: 50%;
+    border-collapse:collapse
+
+}
+.tabelltr{
+    border-bottom: 2px solid black;
+}
+.error-message {
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    background: red;
+    opacity: 0.75;
+    color: black;
+    display: none;
+  }

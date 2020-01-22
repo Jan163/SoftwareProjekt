@@ -1,0 +1,91 @@
+﻿
+
+  .container {
+    position: relative;
+    margin-bottom: 50px;
+    font-size: 22px;
+  }
+
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: black;
+  }
+  .checkmark2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: red;
+  }
+  
+
+.container input:checked ~ .checkmark {
+    background-color: #FFFFFF;
+  }
+  .container input:checked ~ .checkmark2 {
+    background-color: #FFFFFF;
+  }
+  
+
+  .cups{
+    transform: scale(1.9);
+    background-color: red;
+  }
+  .cups2{
+    transform: scale(1.9);
+    background-color: Blue;
+  }
+  
+
+  
+  div.timer {
+    border:1px #666666 solid;
+    width:190px;
+    height:50px;
+    line-height:50px;
+    font-size:36px;
+    font-family:"Courier New", Courier, monospace;
+    text-align:center;
+    margin:5px;
+}
+
+.labelstyle { 
+display: inline-block; width: 7em; 
+}
+.card {
+  padding: 40px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  width: 40%;
+  /*background-color: #F7F7F7;*/
+  background-color: #fffffe;
+  margin: 0 auto 10px;
+  border-radius: 2px;
+  border: 2px solid black;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  }
+.tablewatch{
+  border: none;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100%;
+}
+.tableanzeigeganz{
+  width: 100%;
+}
+.tableanzeige2{
+  text-align: center;
+
+}
+.tableanzeige{
+  text-align: left;
+}
