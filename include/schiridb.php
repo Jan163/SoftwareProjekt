@@ -2,8 +2,7 @@
 include('config.php');
 //$spiel_id=$_SESSION['spiel_id'];
 
-    //hier müssen alle Cups geupadtet werden
-    //updaten
+    //hier müssen alle Cups geupdated werden
  
  
     if(isset($_POST['submit']))
