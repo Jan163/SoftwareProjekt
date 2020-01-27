@@ -12,10 +12,6 @@ if(isset($_POST['submit']))
     $zeit=$_POST['zeit'];
     $timeout=$_POST['timeout'];
 
-    //Für Zeitpläne erstellen
-    //$statement=$pdo->prepare("INSERT INTO turnieroptionen (turnier_name,turnierbeginn,gruppengroesse,teams_pro_gruppe,spielzeit,zeitzwischendenspielen,managercode,zuschauercode,uebrigeteams,aktuellerunde) VALUES (?,?,?,?,?,?,?,?,?,?)");
-    //$statement->execute(array($turniername,$turnierbeginn,$gruppengroesse,$weiterkommend,$zeit,$timeout,$managercode,$zuschauercode,$weiterkommend,'1'));
-
     $statement=$pdo->prepare("INSERT INTO turnieroptionen (turnier_name,gruppengroesse,teams_pro_gruppe,managercode,zuschauercode,uebrigeteams,aktuellerunde) VALUES (?,?,?,?,?,?,?)");
     $statement->execute(array($turniername,$gruppengroesse,$weiterkommend,$managercode,$zuschauercode,$weiterkommend,'1'));
 
@@ -66,12 +62,6 @@ function createRandomPassword($length=3,$chars="")
         <td>Turniername:</td>
         <td><input type="text" name="turniername" required = "true"></td>
     </tr>
-    <!--
-        <tr>
-        <td>Beginn der Spiele:</td>
-        <td><input type="time" name="turnierbeginn" required = "true"></td>
-    </tr>
-    -->
     <tr id="weiter">
         <td>Anzahl Teams für KO-Phase</td>
         <td><select name="weiterkommend" required=true>
@@ -94,18 +84,6 @@ function createRandomPassword($length=3,$chars="")
         <td>Gruppengröße: </td>
         <td><input type="number" name="gruppengroesse" min="0" max="15" name="gruppen" value="0" required = "true" ></td>
     </tr>
-    
-    <!--
-        <tr>
-        <td>Spielezeit:</td>
-        <td><input type="time" id="Spielezeit" name="zeit" required = "true" > hh:mm </td>
-    </tr>
-    
-    <tr>
-        <td>Zeit zwischen den Spielen:</td>
-        <td><input type="time" id="pausenzeit" name="timeout" required = "true">hh:mm</td>
-    </tr>
-    -->
     </table>
         <input type="submit" name='submit' value='Tunier erstellen' class="login login-submit">
     </form>

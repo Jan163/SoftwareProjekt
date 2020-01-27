@@ -73,12 +73,6 @@
                         <td><a href="teameingabe.php?turnier_id=$turnier_id">Teameingabe</a></td>
                     <?php } ?>
                     <td rowspan=4>
-                    <!-- JAVA TIMER -->
-                    <!--
-                    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
-                    <div class="timer">
-                        <span class="minute"></span>:<span class="second">10</span>
-                    </div>-->
                     </td>
                 </tr>
                 <tr>
@@ -144,21 +138,6 @@
                         } ?>
                         </form>
                     </td>
-                
-                    <!-- Timer-->
-                    <!--
-                    <td>
-                        <div class="control">
-                            <button onClick="timer.start(1000)">Start</button> 
-                            <button onClick="timer.stop()">Stop</button> 
-                            <button onClick="timer.reset(60)">Reset</button> 
-                            <button onClick="timer.mode(0)">Count down</button>
-                        </div>
-                    
-                        <script  src="js/timer.js"></script>
-                    </td>
-                    -->
-                    <!-- JAVA TIMER ENDE -->
                 </tr>
                 
                 <tr>

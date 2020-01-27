@@ -30,13 +30,6 @@
                 <tr>
                     <td rowspan=2><a href="manager.php?turnier_id=$turnier_id">Manager-Ansicht</a></td>
                     <td>
-                        <!-- JAVA TIMER -->
-                        <!--
-                        <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
-                        <div class="timer">
-                            <span class="minute">00</span>:<span class="second">10</span>
-                        </div>
-                        -->
                     </td>
                 </tr>
                 <tr>
